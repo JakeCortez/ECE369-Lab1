@@ -26,6 +26,10 @@ module PCAdder(PCResult, PCAddResult);
     output [31:0] PCAddResult;
 
     /* Please fill in the implementation here... */
+    always @ (PCResult, PCAddResult)
+    begin
+        PCAddResult <= PCResult + 4;
+    end
 
 endmodule
 
