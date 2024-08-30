@@ -32,6 +32,20 @@ module ProgramCounter(Address, PCResult, Reset, Clk);
 	output reg [31:0] PCResult;
 
     /* Please fill in the implementation here... */
+	always @ (Address, PCResult)
+		begin
+			//FIXME
+		end
+
+	always @ (Clk, Reset)
+		begin
+			if(Reset == 1'b1)
+			Address <= 20'h00000;
+			else
+			Address <= Address + 1'b1; ///I do not think this is correct;
+		end
+
+			
 
 endmodule
 
