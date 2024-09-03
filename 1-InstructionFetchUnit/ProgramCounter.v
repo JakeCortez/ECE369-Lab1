@@ -37,7 +37,7 @@ module ProgramCounter(Address, PCResult, Reset, Clk);
 			//FIXME
 		end
 
-	always @ (Clk, Reset)
+	always @ (posedge Clk)
 		begin
 			if(Reset == 1'b1)
 			Address <= 20'h00000;
