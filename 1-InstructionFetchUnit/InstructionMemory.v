@@ -53,8 +53,11 @@ module InstructionMemory(Address, Instruction);
             Memory[i] <= i * 3;
         end
     end
-
+    
+    always @(Address, Memory, Instruction)
+    begin
     Instruction <= Memory[Address];
+    end
 
 
 endmodule
