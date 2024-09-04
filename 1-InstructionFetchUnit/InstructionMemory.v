@@ -57,7 +57,9 @@ module InstructionMemory(Address, Instruction);
 
     always @(Address, Memory, Instruction)
     begin
-    Instruction <= Memory[Address];
+        Address <= Address >> 2;
+        Address <= Address << 2;
+        Instruction <= Memory[Address];
     end
 
 
