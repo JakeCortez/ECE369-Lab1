@@ -21,7 +21,7 @@
 //
 //
 //we will store the machine code for a code written in C later. for now initialize 
-//each entry to be its index * 3 (memory[i] = i * 3;)
+//each entry to be its index * 3 (memory[i] = i * 3;) >> DONE
 //all you need to do is give an address as input and read the contents of the 
 //address on your output port. 
 // 
@@ -43,6 +43,21 @@ module InstructionMemory(Address, Instruction);
     output reg [31:0] Instruction;    // Instruction at memory location Address
     
     /* Please fill in the implementation here */
+    integer i;
+    reg [31:0] Memory [0:1024];
+
+    //initialize memory
+    initial begin
+        for(i = 0; i < 1024; i = i + 1)
+        begin
+            Memory[i] <= i * 3;
+        end
+    end
     
+    always @(Address, Memory, Instruction)
+    begin
+    Instruction <= Memory[Address];
+    end
+
 
 endmodule
