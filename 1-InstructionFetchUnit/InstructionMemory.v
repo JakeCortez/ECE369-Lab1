@@ -44,16 +44,16 @@ module InstructionMemory(Address, Instruction);
     
     /* Please fill in the implementation here */
     integer i;
-    reg [31:0] Memory [0:1024];
+    reg [31:0] Memory [0:127];
 
     //initialize memory
     initial begin
-        for(i = 0; i < 1024; i = i + 1)
+        for(i = 0; i < 127; i = i + 1)
         begin
             Memory[i] <= i * 3;
         end
     end
-    
+
     always @(Address, Memory, Instruction)
     begin
     Instruction <= Memory[Address];
