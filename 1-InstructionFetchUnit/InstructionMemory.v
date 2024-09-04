@@ -31,7 +31,8 @@
 //hardcode the values.  in this case you need 7 bits to index into the memory. 
 //
 //be careful with the least two significant bits of the 32bit address. those help us index 
-//into one of the 4 bytes in a word. therefore you will need to use bit [8-2] of the input address. 
+//into one of the 4 bytes in a word. therefore you will need to use bit [8-2] of the input address.
+//byte addressable
 
 
 ////////////////////////////////////////////////////////////////////////////////
