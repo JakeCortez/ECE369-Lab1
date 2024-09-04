@@ -39,6 +39,13 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 module InstructionFetchUnit(Instruction, PCResult, Reset, Clk);
+    input Clk, Reset;
+
+    output reg [31:0]Instruction;
+    output reg [31:0]PCResult;
+
+    //module PCAdder(PCResult, PCAddResult);
+    PCAdder Adder(PCResult, PCAddResult);
 
     /* Please fill in the implementation here... */
 endmodule
