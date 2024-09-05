@@ -45,7 +45,7 @@ module InstructionFetchUnit(Instruction, PCResult, Reset, Clk);
     output reg [31:0]PCResult;
 
     //module PCAdder(PCResult, PCAddResult);
-    PCAdder Adder(PCResult, PCAddResult);
+    PCAdder PCAdder(PCResult, PCAddResult);
 
     /* Please fill in the implementation here... */
 endmodule

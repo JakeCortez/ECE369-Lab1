@@ -65,5 +65,4 @@ module InstructionMemory(Address, Instruction);
         Instruction <= Memory[Address];
     end
 
-
 endmodule
