@@ -57,8 +57,7 @@ module InstructionMemory(Address, Instruction);
 
     always @(Address, Memory, Instruction)
     begin
-        //remove 2 least significant bits to make address divisable by 4
-        Address <= Address >> 2;
+        // Multiply by 4 to fit in memory addresss
         Address <= Address << 2;
 
         //assign instruction to data in memory at address

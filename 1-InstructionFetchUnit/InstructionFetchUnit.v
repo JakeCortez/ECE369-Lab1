@@ -50,15 +50,17 @@ module InstructionFetchUnit(Instruction, PCResult, Reset, Clk);
 
     // module PCAdder(PCResult, PCAddResult);
     PCAdder adder(
-        .PCResult (PCResult),
-        .PCAddResult (PCAddResult) );
+        .PCResult(PCResult),
+        .PCAddResult(PCAddResult)
+    );
 
     // module ProgramCounter(Address, PCResult, Reset, Clk);
     ProgramCounter counter(
-        .Address (PCAddResult),
-        .PCResult (PCResult),
-        .Reset (Reset),
-        .Clk (Clk) );
+        .Address(PCAddResult),
+        .PCResult(PCResult),
+        .Reset(Reset),
+        .Clk(Clk)
+    );
 
     // module InstructionMemory(Address, Instruction); 
     InstructionMemory memory(
