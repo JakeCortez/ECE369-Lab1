@@ -29,12 +29,14 @@ module ProgramCounter_tb();
 	initial begin
 		
     /* Please fill in the implementation here... */
+    
 		Reset = 0;
-		Address = 0; #10;
-		Address = 4; #10;
-		Address = 8; #10;
-		Address = 31; #10;
-		Reset = 1;
+		Address = 0; #20;
+		Address = 4; #20;
+		Address = 8; #20;
+		Address = 31; #20;
+		Reset = 1; #20;
+		#20;
 	end
 
 endmodule
