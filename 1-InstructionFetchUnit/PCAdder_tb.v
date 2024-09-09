@@ -24,7 +24,7 @@ module PCAdder_tb();
         PCResult = 0; #10;
         PCResult = 11; #10;
         PCResult = 16; #10;
-        PCResult = 32; #10;
+        PCResult = 31; #10;
 
 	end
 

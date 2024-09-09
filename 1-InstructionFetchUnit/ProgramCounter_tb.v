@@ -33,7 +33,7 @@ module ProgramCounter_tb();
 		Address = 0; #10;
 		Address = 4; #10;
 		Address = 8; #10;
-		Address = 32; #10;
+		Address = 31; #10;
 		Reset = 1;
 	end
 
