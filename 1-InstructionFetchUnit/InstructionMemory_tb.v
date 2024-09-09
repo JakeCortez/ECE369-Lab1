@@ -28,6 +28,7 @@ module InstructionMemory_tb();
 		Address = 9; #10;
 		Address = 13; #10;
 		Address = 31; #10;
+		$finish;
 	
 	end
 

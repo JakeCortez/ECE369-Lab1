@@ -61,12 +61,12 @@ module InstructionMemory(Address, Instruction);
     always @(Address, Memory, Instruction)
     begin
         // Multiply by 4 to fit in memory addresss
-        tempAddress <= Address;
-        tempAddress <=  tempAddress << 2;
+        //tempAddress <= Address;
+        //tempAddress <=  tempAddress << 2;
 
         //assign instruction to data in memory at address
         //Instruction <= Memory[tempAddress];
-        Instruction <= Memory[Address];
+        Instruction <= Memory[Address[8:2]];
     end
 
 endmodule
