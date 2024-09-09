@@ -62,10 +62,11 @@ module InstructionMemory(Address, Instruction);
     begin
         // Multiply by 4 to fit in memory addresss
         tempAddress <= Address;
-        Address <=  tempAddress << 2;
+        tempAddress <=  tempAddress << 2;
 
         //assign instruction to data in memory at address
-        Instruction <= Memory[Address];
+        //Instruction <= Memory[tempAddress];
+        Instruction <= Memory[Address << 2];
     end
 
 endmodule
