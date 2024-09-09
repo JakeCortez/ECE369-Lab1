@@ -39,7 +39,7 @@
 
 module InstructionMemory(Address, Instruction); 
 
-    input [31:0] Address;        // Input Address 
+    input [31:0] Address;             // Input Address 
 
     output reg [31:0] Instruction;    // Instruction at memory location Address
     
@@ -58,7 +58,7 @@ module InstructionMemory(Address, Instruction);
     always @(Address, Memory, Instruction)
     begin
         // Multiply by 4 to fit in memory addresss
-        Address <= Address << 2;
+        Address <= Address * 4;
 
         //assign instruction to data in memory at address
         Instruction <= Memory[Address];
