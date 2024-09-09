@@ -21,7 +21,11 @@ module PCAdder_tb();
 	initial begin
 	
     /* Please fill in the implementation here... */
-	
+        PCResult = 0; #10;
+        PCResult = 11; #10;
+        PCResult = 16; #10;
+        PCResult = 32; #10;
+
 	end
 
 endmodule
