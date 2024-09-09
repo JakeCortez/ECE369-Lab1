@@ -66,7 +66,7 @@ module InstructionMemory(Address, Instruction);
 
         //assign instruction to data in memory at address
         //Instruction <= Memory[tempAddress];
-        Instruction <= Memory[Address << 2];
+        Instruction <= Memory[Address];
     end
 
 endmodule
