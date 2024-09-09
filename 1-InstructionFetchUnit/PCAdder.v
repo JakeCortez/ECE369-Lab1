@@ -23,7 +23,7 @@ module PCAdder(PCResult, PCAddResult);
 
     input [31:0] PCResult;
 
-    output [31:0] PCAddResult; //should this be reg?
+    output reg [31:0] PCAddResult; //should this be reg?
 
     /* Please fill in the implementation here... */
     always @ (PCResult, PCAddResult)
