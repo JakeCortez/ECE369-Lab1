@@ -7,9 +7,11 @@
 // Description - Implementation of the top level design given in the powerpoint slides
 ////////////////////////////////////////////////////////////////////////////////
 
-module TopLevel(Clk, Reset);
+module TopLevel(Clk, Reset, en_out, out7);
 
 input Clk, Reset;
+output [6:0] en_out;
+output [7:0] out7;
 
 wire ClkOut;
 
