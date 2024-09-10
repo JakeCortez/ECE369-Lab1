@@ -7,10 +7,13 @@
 // Description - Implementation of the top level design given in the powerpoint slides
 ////////////////////////////////////////////////////////////////////////////////
 
-module TopLevel(Clk, Reset)
+module TopLevel(Clk, Reset);
 
 input Clk, Reset;
 
+wire ClkOut;
+
+wire [31:0] Instruction, PCResult;
 //module ClkDiv(Clk, Rst, ClkOut);
 ClkDiv Clk100(Clk, 0, ClkOut);
 //module InstructionFetchUnit(Instruction, PCResult, Reset, Clk);

@@ -25,10 +25,14 @@ module InstructionFetchUnit_tb();
 	
     /* Please fill in the implementation here... */
 	
-		reset = 1;
+		Reset = 1;
         #20;
-        reset = 0;
+        Reset = 0;
         #20;
+        #200;
+        Reset = 1;
+        #20;
+        Reset = 0;
         //$finish;
 
 	end
