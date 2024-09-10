@@ -43,14 +43,14 @@ module InstructionFetchUnit(Instruction, PCResult, Reset, Clk, debug_Instruction
 
     input Clk, Reset;
 
-    output [31:0] Instruction;
-    output [31:0] PCResult;
+    //output [31:0] Instruction;
+    //output [31:0] PCResult;
 
     wire [31:0] PCAddResult;
     output wire [31:0]  debug_Instruction;
     output wire [31:0]  debug_PCResult;
-(* mark_debug = "true" *)  	reg [31:0] Instruction [0:31];
-(* mark_debug = "true" *)  	reg [31:0] PCResult [0:31];
+(* mark_debug = "true" *)  	output [31:0] Instruction;
+(* mark_debug = "true" *)  	output [31:0] PCResult;
 
     // module PCAdder(PCResult, PCAddResult);
     PCAdder adder(
