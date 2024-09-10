@@ -17,7 +17,11 @@ wire [31:0] Instruction, PCResult;
 //module ClkDiv(Clk, Rst, ClkOut);
 ClkDiv Clk100(Clk, 0, ClkOut);
 //module InstructionFetchUnit(Instruction, PCResult, Reset, Clk);
-InstructionFetchUnit FetchUnit(Instruction, PCResult, Reset, ClkOut);
+
+(* mark_debug = "true" *)  wire [31:0] debug_Instruction;
+(* mark_debug = "true" *)  wire [31:0] debug_PCResult;
+
+InstructionFetchUnit FetchUnit(Instruction, PCResult, Reset, ClkOut, debug_Instruction, debug_PCResult);
 //module Two4DigitDisplay(Clk, NumberA, NumberB, out7, en_out);
 Two4DigitDisplay Display(Clk, Instruction[15:0], PCResult[15:0], out7, en_out);
 
