@@ -33,8 +33,8 @@ InstructionFetchUnit FetchUnit(
     .PCResult(PCResult),
     .Reset(Reset),
     .Clk(ClkOut), 
-    debug_Instruction,
-    debug_PCResult
+    .debug_Instruction(debug_Instruction),
+    .debug_PCResult(debug_PCResult)
 );
 
 //module Two4DigitDisplay(Clk, NumberA, NumberB, out7, en_out);
