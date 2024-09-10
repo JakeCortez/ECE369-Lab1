@@ -10,8 +10,8 @@
 module TopLevel(Clk, Reset, en_out, out7);
 
 input Clk, Reset;
-output [6:0] en_out;
-output [7:0] out7;
+output [7:0] en_out;
+output [6:0] out7;
 
 wire ClkOut;
 
