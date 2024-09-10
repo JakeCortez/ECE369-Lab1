@@ -27,7 +27,7 @@ ClkDiv Clk100(
 (* mark_debug = "true" *)  wire [31:0] debug_Instruction;
 (* mark_debug = "true" *)  wire [31:0] debug_PCResult;
 
-//module InstructionFetchUnit(Instruction, PCResult, Reset, Clk);
+//module InstructionFetchUnit(Instruction, PCResult, Reset, Clk, debug_Instruction, debug_PCResult);
 InstructionFetchUnit FetchUnit(
     .Instruction(Instruction),
     .PCResult(PCResult),
