@@ -40,8 +40,6 @@ module ProgramCounter(Address, PCResult, Reset, Clk);
 			else
 				PCResult <= Address;
 		end
-
-			
-
+		
 endmodule
 
