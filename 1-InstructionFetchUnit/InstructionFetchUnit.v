@@ -3,7 +3,10 @@
 ////////////////////////////////////////////////////////////////////////////////
 // Team Members:
 // Overall percent effort of each team meber: 
-// 
+// Cougar: 100%
+// Eden: 100%
+// Jake: 100%
+
 // ECE369A - Computer Architecture
 // Laboratory 3 (PostLab)
 // Module - InstructionFetchUnit.v
